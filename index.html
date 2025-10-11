@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Book Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <span>Welcome!</span>
+            <a href="#" id="order-track">Order Track</a>
+            <a href="donate.html">Book Donation</a>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="header-left">
+                <a href="index.html" class="logo">📚 Old Book Store</a>
+            </div>
+            <div class="header-center">
+                <form id="search-form" action="browse.php" method="GET">
+                    <input type="text" name="q" placeholder="Search by title, author, ISBN">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="header-right">
+                <a href="signin.html" id="signin-link">Hello, Sign In</a>
+                <a href="cart.html" id="cart-link" style="display:none;">Cart</a>
+                <a href="faq.html">Help</a>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="advance_search.php">Advance Search</a>
+            <a href="browse.php">Browse Books</a>
+            <a href="sellers.php">Sellers</a>
+            <a href="start-selling.php" id="start-selling-link">Start Selling</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <h1>Welcome to Old Book Store – Buy & Sell Books Easily</h1>
+        <blockquote id="random-quote"></blockquote>
+        <section id="featured-books">
+            <!-- Featured books will be loaded here -->
+        </section>
+    <a href="browse.php" class="explore-btn">Explore All Books</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Old Book Store. All rights reserved.</p>
+    </footer>
+    <script src="src/app.js"></script>
+</body>
+</html>
